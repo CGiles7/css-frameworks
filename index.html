@@ -16,64 +16,104 @@
     />
   </head>
   <body>
-    <header class="header">
-      <h1 class="row text-center mb-2 mt-4">All About Bears</h1>
-      <h3 class="">Read all about bears and what they're like</h3>
+    <!-- Header -->
+    <header class="border px-5 bg-info text-light">
+      <h1 class="fs-1 mt-5">All About Bears</h1>
+      <h3 class="fs-6 mt-3 mb-5">Read all about bears and what they're like</h3>
     </header>
-    <nav>
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- NavBar-->
+    <nav class="navbar-light bg-light justify-content-center px-5">
+      <div class="container-fluid">
+        <ul id="menu" class="nav justify-content-center">
+          <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <section>
-      <img src="https://placebear.com/490/480" alt="bear with fish"/>
-      <div>
-        <h2>Bears are neat!</h2>
-        <p>
-          Bears are mammals that belong to the family Ursidae. They can be as small as four feet 
-          long and about 60 pounds blah blah blah blah blah blah blah blah blah blah blah blah 
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-          blah blah blah blah blah blah blah 
-        </p>
-        <p>
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        </p>
-        <p>
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-          blah blah blah blah blah blah blah blah blah blah
-        </p>
-        <button href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Source</button>
-      </div>
-    </section>
-      <div class="">
-        <div class="">
-          <img src="https://placebear.com/225/225" alt="two bears" />
-          <p>These bears are playing around</p>
-          <button>See more bears</button>
+    <!-- Bears Intro -->
+    <section class="container-fluid px-5">
+      <div class="row">
+        <!-- Image -->
+        <div class="col-md-6">
+          <img class="img-fluid border border-info my-3" src="https://placebear.com/490/480" alt="bear with fish"/>
         </div>
-        <div class="">
-          <img src="https://placebear.com/225/224" alt="brown bear" />
-          <p>These bears are playing around</p>
-          <button>See more bears</button>
-        </div>
-        <div class="">
-          <img src="https://placebear.com/225/223" alt="bear in water" />
-          <p>These bears are playing around</p>
-          <button>See more bears</button>
-        </div>
-        <div class="">
-          <img src="https://placebear.com/225/222" alt="black bear" />
-          <p>These bears are playing around</p>
-          <button>See more bears</button>
+        <!-- Heading and Paragraphs -->
+        <div class="col-md-6">
+          <div class="h2 text-center col-sm-8 ms-5">
+            <h2 >Bears are neat!</h2>
+          </div>
+          <div>
+            <p>
+              Bears are mammals that belong to the family Ursidae. They can be as small as four feet 
+              long and about 60 pounds blah blah blah blah blah blah blah blah blah blah blah blah 
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+              blah blah blah blah blah blah blah 
+            </p>
+            <p>
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+            </p>
+            <p>
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+              blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+              blah blah blah blah blah blah blah blah blah blah
+            </p>
+          </div>
+          <a href="#" class="link-secondary link-offset-2">Source</a>
         </div>
       </div>
-    <section>
     </section>
-    
+    <!---  Horizontal Ruler  -->
+    <div class="container-fluid px-5">
+      <hr>
+    </div>
+    <!--- Cards -->
+    <section class="px-5 container-fluid padding mb-5">
+      <div class="row padding">
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="card">
+            <img src="https://placebear.com/225/225" class="card-img-top" alt="two bears" />
+            <div class="card-body" >
+              <p class="card-text">These bears are playing around</p>
+              <a href="#" class="btn btn-primary">See more bears</a>
+            </div>
+          </div>
+        </div> 
+        <!-- Card 2 --> 
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img src="https://placebear.com/225/224" class="card-img-top" alt="brown bear" />
+            <div class="card-body">
+              <p class="card-text">These bears are playing around</p>
+              <a href="#" class="btn btn-primary">See more bears</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img src="https://placebear.com/225/223" class="card-img-top" alt="bear in water" />
+            <div class="card-body">
+              <p class="card-text">These bears are playing around</p>
+              <a href="#" class="btn btn-primary">See more bears</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <img src="https://placebear.com/225/222" class="card-img-top" alt="black bear" />
+            <div class="card-body">
+              <p class="card-text">These bears are playing around</p>
+              <a href="#" class="btn btn-primary">See more bears</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of cards -->
+      </div> 
+    </section>
   </body>
 </html>
